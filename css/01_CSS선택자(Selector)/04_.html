@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>id태그 공부</title>
+    <style> 
+        #heading {
+            color: pink;
+        }
+
+        #menu {
+            background-color: yellow; 
+           
+        }
+
+     
+    
+
+        ul {
+            color: red;
+            list-style: none;
+            background-color: dodgerblue;
+        }
+
+        /*  배경을 ul 그냥 태그로 선택했을때와 id태그로 선택했을때 우선순위가 더 높은순서로 하나만 적용된다. 아이디는 무조건 한개고 가장위. 클래스는 여러개가능 낮은순위.
+피라미드 가장상위 아이디 가장 밑 클래스 우선순위 가장 높은애의 디자인이 적용되는것.  */
+
+        #blend {
+            color: rgb(253, 253, 254);
+            background-color: black;
+        }
+
+        #category {
+            color: blueviolet;
+            font-weight: bold;
+            background-color: bisque;
+        }
+
+        p {
+            background-color: rgb(144, 244, 23);
+        }
+    </style>
+</head>
+<!-- id는 샵# !!  -->
+
+<body> <center>
+    <h1 id="heading">스타벅스 여름메뉴</h1>
+    <h2>스타벅스와 함께 내가 좋아하는것을 즐기는 나만의 여름을 만들어보세요!</h2>
+    <p>에스프레소</p>
+    <ul id="menu">
+        <li>펀치 그래피티 블렌디드</li>
+        <li>롤린 민트초코 콜드브루</li>
+        <li>포멜로 플로우 그린티 </li>
+    </ul>
+    <p id="blend">블렌디드</p>
+    <p id="category">타바나</p> </center>
+</body>
+
+</html>
