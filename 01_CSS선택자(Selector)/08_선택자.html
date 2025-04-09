@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: brown;
+            text-decoration: none;
+        }
+
+        /* a:link {
+            color: green
+        }
+        a:visited {
+            color: skyblue;} 
+              a:active는 클릭할때 색깔바뀜
+            a:hover 마우스 올렸을때 색깔이나 크기가 변함 
+            이미지나 아이콘에 이용할수있음.*/
+        a:hover {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+
+        a:active {
+            color: lightgreen;
+        }
+
+        /* 
+1):link 방문하지 않은 링크에 스타일 적용
+2):visited 방문한 링크에 스타일 적용
+3):active 웹 요소를 활성화 클릭 했을때 스타일 적용
+4):hover 웹 요소에 마우스 커서를 올려 놓았을때 스타일 적용 
+css 작성 순서에 영향을 받으므로 작성 순서 주의할것
+:link >> visited >> :hover >> :active
+*/
+/* a img{background-color: bisque;} */
+        .bird:hover {
+            transform: scale(0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a href="https://www.google.com" target="_blank">구글바로가기</a>
+    </p>
+
+    <div onclick="location.href='https://www.google.com'" style="cursor: pointer;">
+        <img class="bird" src="/html/04_이미지/images/bird.gif" alt="새" width="100">
+    </div>
+    
+</body>
+
+</html>
